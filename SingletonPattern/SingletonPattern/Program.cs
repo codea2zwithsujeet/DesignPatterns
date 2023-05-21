@@ -1,2 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using SingletonPattern;
+
+Singleton singleton = Singleton.Instance;
+singleton.SomeData = "Hello, Singleton!";
+singleton.SomeMethod();
+
